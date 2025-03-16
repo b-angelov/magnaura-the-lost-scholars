@@ -1,0 +1,67 @@
+/* src/components/Inventory.css */
+.inventory-container {
+    margin-top: 15px;
+}
+
+.inventory-toggle {
+    width: 100%;
+}
+
+.inventory-panel {
+    background: #f9f0d9;
+    border: 2px solid #a87d32;
+    padding: 10px;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.inventory-item {
+    border: 1px solid #a87d32;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    background: #e4d2a7;
+}
+
+.inventory-item.selected {
+    background: #c4a264;
+    border: 1px solid #442700;
+}
+
+.item-icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.empty-message {
+    grid-column: span 4;
+    text-align: center;
+    color: #8c6d46;
+    font-style: italic;
+}
+
+.item-details {
+    border-top: 1px solid #a87d32;
+    padding-top: 10px;
+}
+
+.wisdom-value {
+    color: #7b5a17;
+    font-weight: bold;
+}

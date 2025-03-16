@@ -1,0 +1,66 @@
+/* src/components/DialogueBox.css */
+.dialogue-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.dialogue-container {
+    width: 80%;
+    max-width: 600px;
+    background: #f9f0d9;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: relative;
+}
+
+.dialogue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #a87d32;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #a87d32;
+}
+
+.dialogue-content {
+    display: flex;
+}
+
+.speaker-portrait {
+    flex: 0 0 100px;
+    margin-right: 15px;
+}
+
+.speaker-portrait img {
+    width: 100px;
+    height: auto;
+    border: 3px solid #a87d32;
+}
+
+.dialogue-text {
+    flex: 1;
+}
+
+.dialogue-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}

@@ -1,0 +1,52 @@
+/* src/components/GameMap.css */
+.game-map-container {
+    padding: 10px;
+    background: #f9f0d9;
+    border: 4px double #a87d32;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.game-map {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-row {
+    display: flex;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cell-floor {
+    background: #e4d2a7;
+}
+
+.cell-wall {
+    background: #8c6d46;
+}
+
+.cell-player {
+    position: relative;
+}
+
+.player-marker {
+    font-size: 20px;
+    z-index: 2;
+}
+
+.wall-icon, .scroll-icon, .relic-icon, .door-icon, .npc-icon {
+    font-size: 16px;
+}
+
+.byzantine-border {
+    position: relative;
+    border: 4px double #a87d32;
+}
